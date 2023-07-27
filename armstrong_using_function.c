@@ -1,21 +1,21 @@
 #include<stdio.h>
 
-int main()
-{
-    int n, i, j, k, count = 0;
+int Armstrong(int n) {
+    int sum = 0, temp = n;
+    while (temp > 0) {
+        int digit = temp % 10;
+        sum += digit * digit * digit;
+        temp /= 10;
+    }
+    return (sum == n);
+}
+
+int main() {
+    int n, i, count = 0;
     printf("Enter the value of n: ");
     scanf("%d", &n);
-    for(i = 1; i <= n; i++)
-    {
-        int temp = i, sum = 0;
-        while(temp > 0)
-        {
-            k = temp % 10;
-            sum += k * k * k;
-            temp /= 10;
-        }
-        if(sum == i)
-        {
+    for (i = 1; i <= n; i++) {
+        if (Armstrong(i)) {
             printf("%d ", i);
             count++;
         }
