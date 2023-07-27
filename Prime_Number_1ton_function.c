@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <math.h>
 
-// Function to check if a number is prime
 int Prime(int num) {
     if (num == 1) {
         return 0;
@@ -11,14 +10,12 @@ int Prime(int num) {
         return 1;
     }
 
-    // Check if the number is divisible by any number from 2 to the square root of the number
     for (int i = 2; i <= sqrt(num); i++) {
         if (num % i == 0) {
             return 0;
         }
     }
 
-    // If the number is not divisible by any number from 2 to the square root of the number, then it is prime
     return 1;
 }
 
