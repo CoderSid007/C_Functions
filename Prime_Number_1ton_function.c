@@ -2,7 +2,7 @@
 #include <math.h>
 
 // Function to check if a number is prime
-int isPrime(int num) {
+int Prime(int num) {
     if (num == 1) {
         return 0;
     }
@@ -29,7 +29,7 @@ int main() {
     scanf("%d", &n);
 
     for (int i = 1; i <= n; i++) {
-        if (isPrime(i)) {
+        if (Prime(i)) {
             count++;
             printf("%d ", i);
         }
