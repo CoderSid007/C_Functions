@@ -1,6 +1,10 @@
 #include <stdio.h>
 #include <math.h>
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> f02e6ebb251e3c89e3294fdb3bf2dde86744a1e5
 int isPrime(int num) {
     
 
@@ -12,12 +16,20 @@ int isPrime(int num) {
         return 1;
     }
 
+<<<<<<< HEAD
+=======
+   
+>>>>>>> f02e6ebb251e3c89e3294fdb3bf2dde86744a1e5
     for (int i = 2; i <= sqrt(num); i++) {
         if (num % i == 0) {
             return 0;
         }
     }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> f02e6ebb251e3c89e3294fdb3bf2dde86744a1e5
     return 1;
 }
 
